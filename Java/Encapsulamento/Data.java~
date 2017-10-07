@@ -1,0 +1,41 @@
+/**/
+class Data{
+private	int dia;
+private	int mes;
+private	int ano;
+String formatada (){
+	String resultado = dia +"/"+ mes +"/" +ano;
+return resultado;
+}
+
+/******************************************************************************************************************************/
+
+public int getDia(int dia){
+	return this.dia;
+};
+
+public void setDia(){
+	this.dia= dia;
+};
+
+public int getMes(int mes){
+	return this.mes;
+};
+
+public void setMes(){
+	this.mes=mes;
+};
+
+public int getAno(int ano){
+	return this.ano;
+};
+
+public void setAno(){
+	this.ano=ano;
+};
+
+
+
+
+
+}

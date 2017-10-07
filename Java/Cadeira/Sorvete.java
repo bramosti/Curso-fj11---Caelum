@@ -1,0 +1,17 @@
+/*Imprimir ultilizando a classe Cadeira*/
+class Sorvete{
+	public static void main (String[] args){
+
+		Cadeira x = new Cadeira();
+		x.cor = "preto";
+		x.material = "ferro";
+		x.peso = 30;
+
+		System.out.println(x.cor);
+		System.out.println(x.material);
+		System.out.println(x.peso);
+
+	}
+
+
+}

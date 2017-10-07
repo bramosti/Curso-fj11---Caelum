@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Eclipse/Curso/src"/>
+	<classpathentry kind="src" path="Java/Banco"/>
+	<classpathentry kind="src" path="Java/Cadeira"/>
+	<classpathentry kind="src" path="Java/Encapsulamento"/>
+	<classpathentry kind="src" path="Java/Imprimir"/>
+	<classpathentry kind="src" path="Java/Outros"/>
+	<classpathentry kind="src" path="Java/Porta"/>
+	<classpathentry kind="lib" path="fj11-lib-contas.jar"/>
+	<classpathentry kind="lib" path="Teste.jar"/>
+	<classpathentry kind="output" path="Eclipse/Curso/bin"/>
+</classpath>

@@ -1,0 +1,16 @@
+package br.com.caelum.contas.modelo;
+
+public class ContaCorrente extends Conta {
+	@Override
+	public String getTipo() {
+		return "Conta Corrente";
+	}
+
+	public void sacar(double valor) {
+		Conta conta = new Conta();
+		double teste;
+		teste= getSaldo() - 0.10;
+		setSaldo(teste);
+		//super.saldo -= (valor + 0.10);
+	}
+}

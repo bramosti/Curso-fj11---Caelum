@@ -1,0 +1,30 @@
+package br.com.caelum.contas.main;
+
+import java.util.Collections;
+import java.util.LinkedList;
+public class TesteListas2 {
+
+	public static void main(String[] args) {
+		LinkedList<String> compras = new LinkedList<String>();
+		compras.add("arroz");
+		compras.add("feijão");
+		compras.add("carne");
+		// compras.set(1, "feijão preto");
+		// compras.add(2, "arroz branco");
+		// compras.remove(0);
+		// compras.remove("carne");
+		// System.out.println(compras.contains("carne"));
+
+		Collections.sort(compras);// ordenar
+
+		// for (int i = 0; i < compras.size(); i++) {
+		// String produto = compras.get(i);
+		// System.out.println(produto);
+		// }
+
+		for (String produto : compras) {
+			System.out.println(produto);
+		}
+	}
+
+}

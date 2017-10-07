@@ -1,0 +1,84 @@
+package br.com.caelum.contas.main;
+
+import java.util.LinkedHashSet;
+
+public class TesteListas2 {
+
+	public static void main(String[] args) {
+//		List<String> compras = new LinkedList<String>();//Deixa repetir
+//		compras.add("arroz");
+//		compras.add("feijão");
+//		compras.add("arroz");
+//	
+//		System.out.println(compras.size());
+//
+//		Collections.sort(compras);// ordenar
+//
+//		// for (int i = 0; i < compras.size(); i++) {
+//		// String produto = compras.get(i);
+//		// System.out.println(produto);
+//		// }
+//
+//		for (String produto : compras) {
+//			System.out.println(produto);
+//		}
+		/********************************************************************************/
+//		HashSet<String> compras = new HashSet<String>();//Não deixa repetir, e não mantem a ordem de insersão, otimo para contens
+//		compras.add("carne");
+//		compras.add("feijão");
+//		compras.add("carne");
+//	
+//		System.out.println(compras.size());
+//
+//
+//		// for (int i = 0; i < compras.size(); i++) {
+//		// String produto = compras.get(i);
+//		// System.out.println(produto);
+//		// }
+//
+//		for (String produto : compras) {
+//			System.out.println(produto);
+//		}
+		/******************************************************************************************/
+		
+//		TreeSet<String> compras = new TreeSet<String>();//Já ordena na incersão
+//		compras.add("carne");
+//		compras.add("feijão");
+//		compras.add("carne");
+//	
+//		System.out.println(compras.size());
+//
+//
+//		// for (int i = 0; i < compras.size(); i++) {
+//		// String produto = compras.get(i);
+//		// System.out.println(produto);
+//		// }
+//
+//		for (String produto : compras) {
+//			System.out.println(produto);
+//		}
+		/***************************************************************************************************/
+		
+		LinkedHashSet<String> compras = new LinkedHashSet<String>();//tem uma ordem de insersão
+		compras.add("carne");
+		compras.add("feijão");
+		compras.add("carne");
+	
+		System.out.println(compras.size());
+
+
+		// for (int i = 0; i < compras.size(); i++) {
+		// String produto = compras.get(i);
+		// System.out.println(produto);
+		// }
+
+		for (String produto : compras) {
+			System.out.println(produto);
+		}
+		
+		/*********************************************************************************************************/
+		
+		
+	}
+
+}

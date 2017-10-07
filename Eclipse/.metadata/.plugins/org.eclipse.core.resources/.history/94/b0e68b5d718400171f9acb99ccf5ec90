@@ -1,0 +1,11 @@
+package Regas;
+/**/
+class Data{
+	int dia;
+	int mes;
+	int ano;
+String formatada (){
+	String resultado = dia +"/"+ mes +"/" +ano;
+return resultado;
+}
+}

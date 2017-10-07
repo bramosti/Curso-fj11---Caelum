@@ -1,0 +1,9 @@
+
+public class DataData {
+	public int dia;
+	public int mes;
+	public int ano;
+
+	public DataData() {
+	}
+}

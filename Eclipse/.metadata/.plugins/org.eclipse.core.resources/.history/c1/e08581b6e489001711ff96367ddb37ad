@@ -1,0 +1,26 @@
+package br.com.caelum.contas.main;
+
+public class TestaLista {
+
+	public static void main(String[] args) {
+		
+		// int [] numeros = new int[3];
+		//
+		// numeros[0] = 1234;
+		// numeros[1] = 5555;
+		// numeros[2] = 6677;
+		//
+		// for (int i = 0; i < numeros.length; i++) {
+		// int valor = numeros[i];
+		//
+		// System.out.println(valor);
+		//
+		// }
+		
+		
+		
+		System.out.println(args.length);
+		System.out.println(args[7]);
+	}
+
+}

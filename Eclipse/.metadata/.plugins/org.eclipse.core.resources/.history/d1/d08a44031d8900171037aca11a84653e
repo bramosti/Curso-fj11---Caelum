@@ -1,0 +1,158 @@
+package br.com.caelum.contas.modelo;
+
+/**
+ * conta para um caixa eletronico
+ * 
+ * @author alex
+ *
+ */
+
+public abstract class Conta {
+	private String titular;
+	private int numero;
+	private String agencia;
+	/* protected */private double saldo;
+	private String abertura;
+	private Data dataDeAbertura;
+
+	/**
+	 * Parametro para colocar o Titular na conta
+	 * 
+	 * @param titular
+	 *            tem que ser ums string
+	 */
+
+	/* Construtor */
+	// public Conta(String titular){
+	// this.titular=titular;
+	// }
+
+	public void sacar(double valor) {
+		verificaSeOValorEhNegativo(valor);
+		
+		if (valor > getSaldo()){
+			throw new IllegalArgumentException("Saldo Insuficiente");
+		}else {
+			saldo -= valor;
+		}
+	}
+
+	public void depositar(double valor) {
+		verificaSeOValorEhNegativo(valor);
+			
+		saldo += valor;
+		
+	}
+	
+	private void verificaSeOValorEhNegativo(double valor) {
+		if (valor < 0) {
+			throw new IllegalArgumentException("Você tentou depoisitar " + "um valor negativo");
+		}  
+	}
+
+	/**
+	 * 
+	 * @return
+	 */
+	public double calculaRendimento() {
+		double saldoRendimento;
+		saldoRendimento = saldo * 0.1;
+		return saldoRendimento;
+	}
+
+	public String recuperaDadosParaImpresao() {
+		String dados = "Titular: " + this.titular;
+		dados += "\n Numero: " + this.numero;
+		dados += "\n Agencia: " + this.agencia;
+		dados += "\n Saldo: " + this.saldo;
+		dados += "\n Data de Abertura:" + this.abertura;
+		return dados;
+	}
+
+	public String recuperaDadosParaImpresao2() {
+		String dados = "Titular: " + this.titular;
+		dados += "\n Numero: " + this.numero;
+		dados += "\n Agencia: " + this.agencia;
+		dados += "\n Saldo: " + this.saldo;
+		dados += "\n Data de Abertura:" + this.abertura;
+		dados += "\n Dia: " + this.dataDeAbertura.getDia();
+		dados += "\n Mes: " + this.dataDeAbertura.getMes();
+		dados += "\n Ano: " + this.dataDeAbertura.getAno();
+		return dados;
+	}
+
+	public String recuperaDadosParaImpresao3() {
+		String dados = "Titular: " + this.titular;
+		dados += "\n Numero: " + this.numero;
+		dados += "\n Agencia: " + this.agencia;
+		dados += "\n Saldo: " + this.saldo;
+		dados += "\n Data de Abertura:" + this.abertura;
+		dados += "\n Dia: " + this.dataDeAbertura.getDia();
+		dados += "\n Mes: " + this.dataDeAbertura.getMes();
+		dados += "\n Ano: " + this.dataDeAbertura.getAno();
+		dados += "\nData Formatada: " + this.dataDeAbertura.formatada();
+		return dados;
+	}
+
+	public abstract String getTipo();
+
+	// {
+	// return "Conta";
+	// }
+
+	public void transfere(double valor, Conta conta) {
+		this.sacar(valor);
+		conta.depositar(valor);
+	}
+
+	/***********************************************************************************************************************/
+
+	public void setTitular(String titular) {
+		this.titular = titular;
+	};
+
+	public String getTitular() {
+		return this.titular;
+	};
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	};
+
+	public int getNumero() {
+		return this.numero;
+	};
+
+	public void setAgencia(String agencia) {
+		this.agencia = agencia;
+	};
+
+	public String getAgencia() {
+		return this.agencia;
+	};
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	};
+
+	public double getSaldo() {
+		return this.saldo;
+	};
+
+	public void setAbertura(String abertura) {
+		this.abertura = abertura;
+	};
+
+	public String getAbertura() {
+		return this.abertura;
+	};
+
+	public void setDataDeAbertura(Data dataDeAbertura) {
+		this.dataDeAbertura = dataDeAbertura;
+	};
+
+	public Data getDataDeAbertura() {
+		return this.dataDeAbertura;
+	}
+
+}

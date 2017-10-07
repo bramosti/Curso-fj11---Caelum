@@ -1,0 +1,83 @@
+package br.com.caelum.contas.main;
+
+import br.com.caelum.contas.modelo.Conta;
+import br.com.caelum.contas.modelo.Data;
+
+/**/
+/**
+ * Main para movimentação
+ * @author Alex
+ *
+ */
+public class Movimento {
+	public static void main(String[] args) {
+
+	Conta c;// = new Conta("Hugo");
+
+		// c.setTitular("Hugo");
+		c.setNumero(123);
+		c.setAgencia("45678-9");
+		c.setSaldo(50.0);
+		c.setAbertura("04/06/2015");
+
+		c.depositar(100.0);
+		System.out.println("Saldo atula: " + c.getSaldo());
+		System.out.println("Rendimento Mensal: " + c.calculaRendimento());
+
+		System.out.println(c.recuperaDadosParaImpresao());
+
+		/************************************ Exercicio 4 *******************************************************************/
+/**
+ * Gera uma conta com o titular Danilo e o saldo de 100 reais
+ */
+		Conta c1;// = new Conta("Danilo");
+		// c1.setTitular("Danilo");
+		c1.setSaldo(100);
+
+		Conta c2 = new Conta("Danilo");
+		// c2.setTitular("Danilo");
+		c2.setSaldo(100);
+
+		if (c1 == c2) {
+			System.out.println("iguais");
+		} else {
+			System.out.println("diferentes");
+		}
+
+		/****************************** Exercicio 5 **************************************************************************/
+
+		Conta c3 = c2;
+		c3.setTitular("Danilo");
+		c3.setSaldo(100);
+
+		if (c3 == c2) {
+			System.out.println("iguais");
+		} else {
+			System.out.println("diferentes");
+		}
+
+		/***************************** Exercicio 6 e 7 *************************************************************************/
+
+		Data data = new Data();
+		c.setDataDeAbertura(data);
+
+		data.setDia(5);
+		data.setMes(12);
+		data.setAno(2017);
+
+		System.out.println(c.recuperaDadosParaImpresao2());
+
+		/***************************** Exercicio 9 *************************************************************************/
+
+		Data data1 = new Data();
+		c.setDataDeAbertura(data1);
+
+		data1.setDia(20);
+		data1.setMes(12);
+		data1.setAno(2017);
+
+		System.out.println(c.recuperaDadosParaImpresao3());
+
+	}
+
+}

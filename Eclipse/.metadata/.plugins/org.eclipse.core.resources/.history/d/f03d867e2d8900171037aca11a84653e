@@ -1,0 +1,16 @@
+package br.com.caelum.contas.modelo;
+
+public class TesteString {
+
+	public static void main(String[] args) {
+		String s1 = "Batata";
+		String s2 = "Batata";
+		
+		if(s1 == s2){
+			System.out.println("iguais");
+		}else {
+			System.out.println("diferentes");
+		}
+	}
+
+}

@@ -1,0 +1,81 @@
+package br.com.caelum.contas.main;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+
+public class TestaLista {
+
+	public static void main(String[] args) {
+
+		// int [] numeros = new int[3];
+		//
+		// numeros[0] = 1234;
+		// numeros[1] = 5555;
+		// numeros[2] = 6677;
+		//
+		// for (int i = 0; i < numeros.length; i++) {
+		// int valor = numeros[i];
+		//
+		// System.out.println(valor);
+		//
+		// }
+		/*****************************************************************************/
+		// System.out.println(args.length);
+		// System.out.println(args[7]);
+		/*******************************************************************************/
+		// Object[] compras = new Object[4];
+		// compras[0] = "arroz";
+		// compras[1] = "feijão";
+		// compras[2] = 2.79;
+		// compras[3] = 15;
+		//
+		// int preco = (Integer) compras[3] + 10;
+		//
+		// String qtdTXT = JOptionPane.showInputDialog("Digite");
+		// int quantidade = Integer.parseInt(qtdTXT);
+		// double total = preco * quantidade;
+		// System.out.println(total);
+		/**************************************************************************************/
+		// ArrayList<String> compras = new ArrayList<String>();
+		// compras.add("arroz");
+		// compras.add("feijão");
+		// compras.add("carne");
+		// //compras.set(1, "feijão preto");
+		// compras.add(2, "arroz branco");
+		// compras.remove(0);
+		// compras.remove("carne");
+		// System.out.println(compras.contains("carne"));
+
+		// Collections.sort(compras);//ordenar
+
+		// for (int i = 0; i < compras.size(); i++) {
+		// String produto = compras.get(i);
+		// System.out.println(produto);
+		// }
+
+		// for (String produto : compras) {
+		// System.out.println(produto);
+		// }
+		/********************************************************************************************/
+
+		LinkedList<String> compras = new LinkedList<String>();
+		compras.add("arroz");
+		compras.add("feijão");
+		compras.add("carne");
+
+		System.out.println(compras.size());
+
+		Collections.sort(compras);// ordenar
+
+		// for (int i = 0; i < compras.size(); i++) {
+		// String produto = compras.get(i);
+		// System.out.println(produto);
+		// }
+
+		for (String produto : compras) {
+			System.out.println(produto);
+		}
+	}
+
+}

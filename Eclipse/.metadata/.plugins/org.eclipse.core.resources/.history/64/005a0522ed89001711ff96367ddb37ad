@@ -1,0 +1,56 @@
+package br.com.caelum.contas.main;
+
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
+
+public class TestaLista {
+
+	public static void main(String[] args) {
+
+		// int [] numeros = new int[3];
+		//
+		// numeros[0] = 1234;
+		// numeros[1] = 5555;
+		// numeros[2] = 6677;
+		//
+		// for (int i = 0; i < numeros.length; i++) {
+		// int valor = numeros[i];
+		//
+		// System.out.println(valor);
+		//
+		// }
+		/*****************************************************************************/
+		// System.out.println(args.length);
+		// System.out.println(args[7]);
+		/*******************************************************************************/
+		// Object[] compras = new Object[4];
+		// compras[0] = "arroz";
+		// compras[1] = "feijão";
+		// compras[2] = 2.79;
+		// compras[3] = 15;
+		//
+		// int preco = (Integer) compras[3] + 10;
+		//
+		// String qtdTXT = JOptionPane.showInputDialog("Digite");
+		// int quantidade = Integer.parseInt(qtdTXT);
+		// double total = preco * quantidade;
+		// System.out.println(total);
+		/**************************************************************************************/
+		ArrayList<String> compras = new ArrayList<String>();
+		compras.add("arroz");
+		compras.add("feijão");
+		compras.add("carne");
+
+//		for (int i = 0; i < compras.size(); i++) {
+//			String produto = compras.get(i);
+//			System.out.println(produto);
+//		}
+		
+		for (String produtos : compras) {
+			System.out.println(produto);
+		}
+
+	}
+
+}

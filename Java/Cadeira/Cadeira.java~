@@ -1,0 +1,5 @@
+class Cadeira{
+String cor;
+String material;
+int peso;
+}
